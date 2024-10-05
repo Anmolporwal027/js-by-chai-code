@@ -12,4 +12,6 @@ let points = 2.33
 
 console.log(typeof "anmol");
 console.log(typeof age);
+console.log(isLoggedin);
+console.log(typeof isLoggedin);
 
