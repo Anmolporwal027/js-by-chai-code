@@ -29,5 +29,31 @@ const myFunction = function(){
 
 console.log(typeof outSideTemp);
 console.log(typeof heors);
+myFunction();
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) , Heap(Non-Primitive)
+
+let MyName = "Anmol Dhanotiya"
+let AnotherName = MyName //copy is created and putted in New variable
+AnotherName = "Changed Name" //this change didn't affect original value
+console.log(MyName);
+console.log(AnotherName);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@cbc"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Anmol@goggle.com" // original email is chaged 
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
