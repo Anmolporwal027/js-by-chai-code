@@ -18,7 +18,7 @@ console.log(arr2);
 
 
 
-console.log(Array.isArray('Anmol'))//check that given is array of not
+console.log(Array.isArray('Anmol'))//check that given is array or not
 console.log(Array.from('Anmol'))//changes the string in an array form
 console.log(Array.from({name:'anmol'}))//interesting case
 
