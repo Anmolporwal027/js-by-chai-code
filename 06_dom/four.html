@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white;"> 
+    <ul class="language">
+        <li>Java script</li>
+    </ul>
+</body>
+<script>
+ function addLanguage(langname){
+    const li = document.createElement('li')
+    li.innerHTML = `${langname}`
+    // document.querySelector('.language').appendChild(li);
+    // uper and niche vali lines are same 
+    const lang = document.querySelector('.language')
+    lang.appendChild(li)
+ }
+ addLanguage("python");
+ addLanguage("c plus plus")
+
+ function addOptilanguage(langname){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li);
+ }
+
+ addOptilanguage("golang");
+ addOptilanguage("typescript")
+
+//  Edit
+const secondlang = document.querySelector('li:nth-child(2)')
+// secondlang.innerHTML = "Mojo"
+const li = document.createElement('li');
+li.textContent = "Mojo"
+secondlang.replaceWith(li)
+
+
+// edit
+const fisrtlang = document.querySelector('li:nth-child(1)')
+fisrtlang.outerHTML = '<li>Typescript</li>'
+
+// remove
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove();
+</script>
+</html>
